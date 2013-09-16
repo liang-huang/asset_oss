@@ -6,7 +6,7 @@ require 'zlib'
 module AssetOSS
   class Asset
     
-    DEFAULT_ASSET_PATHS = ['favicon.ico', 'images', 'javascripts', 'stylesheets', 'fonts']
+    DEFAULT_ASSET_PATHS = ['favicon.ico', 'images', 'javascripts', 'stylesheets', 'fonts', 'js']
     @@asset_paths = DEFAULT_ASSET_PATHS
     
     #DEFAULT_GZIP_TYPES = ['text/css', 'application/javascript']
