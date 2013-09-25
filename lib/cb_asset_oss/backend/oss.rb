@@ -55,7 +55,7 @@ module AssetOSS
       
         headers = {
           :content_type => asset.mime_type,
-        }.merge(asset.cache_headers)
+        }.merge(asset.cache_headers, asset.cross_origin_header)
         
         asset.replace_css_images!(:prefix => oss_prefix) if asset.css?
         

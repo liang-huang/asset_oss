@@ -145,6 +145,10 @@ module AssetOSS
     def cache_headers
       {'Expires' => expiry_date, 'Cache-Control' => 'public'} # 1 year expiry
     end
+
+    def cross_origin_header
+      { 'x-oss-meta-Access-Control-Allow-Origin' => '*'}
+    end
     
     def gzip_headers
       {'Content-Encoding' => 'gzip', 'Vary' => 'Accept-Encoding'}
